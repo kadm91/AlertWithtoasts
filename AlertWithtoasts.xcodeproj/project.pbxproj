@@ -11,6 +11,7 @@
 		00B184972B5EDB9A004499D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B184962B5EDB9A004499D3 /* ContentView.swift */; };
 		00B184992B5EDB9B004499D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B184982B5EDB9B004499D3 /* Assets.xcassets */; };
 		00B1849C2B5EDB9B004499D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B1849B2B5EDB9B004499D3 /* Preview Assets.xcassets */; };
+		00B184A42B5EDC44004499D3 /* ToastUI in Frameworks */ = {isa = PBXBuildFile; productRef = 00B184A32B5EDC44004499D3 /* ToastUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B184A42B5EDC44004499D3 /* ToastUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = AlertWithtoasts;
+			packageProductDependencies = (
+				00B184A32B5EDC44004499D3 /* ToastUI */,
+			);
 			productName = AlertWithtoasts;
 			productReference = 00B184912B5EDB9A004499D3 /* AlertWithtoasts.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 00B184882B5EDB9A004499D3;
+			packageReferences = (
+				00B184A22B5EDC44004499D3 /* XCRemoteSwiftPackageReference "ToastUI" */,
+			);
 			productRefGroup = 00B184922B5EDB9A004499D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		00B184A22B5EDC44004499D3 /* XCRemoteSwiftPackageReference "ToastUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/quanshousio/ToastUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00B184A32B5EDC44004499D3 /* ToastUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00B184A22B5EDC44004499D3 /* XCRemoteSwiftPackageReference "ToastUI" */;
+			productName = ToastUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 00B184892B5EDB9A004499D3 /* Project object */;
 }
